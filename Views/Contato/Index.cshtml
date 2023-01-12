@@ -13,3 +13,26 @@ ViewData["Title"] = "Listagem de Contatos";
 <a asp-action="Criar">Novo Contato</a>
 
 </p>
+
+<table class="table">
+
+<thead>
+
+<tr>
+    <th>
+@Html.DisplayNameFor(model => model.Id)
+    </th>
+       <th>
+@Html.DisplayNameFor(model => model.Nome)
+    </th>
+       <th>
+@Html.DisplayNameFor(model => model.Telefone)
+    </th>
+       <th>
+@Html.DisplayNameFor(model => model.Ativo)
+    </th>
+</tr>
+
+</thead>
+
+</table>
