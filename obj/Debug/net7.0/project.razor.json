@@ -16570,6 +16570,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Gustavo\\Desktop\\ProjetoMVC\\Views\\Contato\\Detalhes.cshtml",
+      "TargetPath": "Views\\Contato\\Detalhes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Gustavo\\Desktop\\ProjetoMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
