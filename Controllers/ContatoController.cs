@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProjetoMVC.Context;
 using ProjetoMVC.Models;
 
@@ -28,14 +29,30 @@ public ActionResult Criar(){
 //Post quando estou na pagina e envio informações pra salvar
 [HttpPost]
 public IActionResult Criar(Contato contato){
-
-if(ModelState.IsValid){// se os dados estiverem validos
-    
+ 
     _context.Contatos.Add(contato);
+
+    //using(AgendaContext agendaContext = new AgendaContext())
+   // {
+    // if(agendaContext.Contatos.Any(x => x.Nome == contato.Nome)){
+
+    //     ViewBag.DuplicateMessage="Dp";
+    // }
     _context.SaveChanges();
     return RedirectToAction(nameof(Index));
+    
+    return View(contato);
 }
-return View(contato);
+
+public IActionResult Editar(int id){
+
+    var contato = _context.Contatos.Find(id);
+
+    if(contato == null)
+
+    return RedirectToAction(nameof(Index));
+
+    return View(contato); //caso exista retorna os valores no campo
 }
 
 }
