@@ -16575,6 +16575,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Gustavo\\Desktop\\ProjetoMVC\\Views\\Contato\\Deletar.cshtml",
+      "TargetPath": "Views\\Contato\\Deletar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Gustavo\\Desktop\\ProjetoMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
