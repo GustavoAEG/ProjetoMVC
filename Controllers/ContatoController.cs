@@ -64,6 +64,10 @@ public IActionResult Editar(int id)
         contatoBanco.Nome = contato.Nome;
         contatoBanco.Telefone = contato.Telefone;
         contatoBanco.Ativo = contato.Ativo;
+        if(contatoBanco.Nome == contato.Nome){
+            ViewBag.DuplicateMessage="ok";
+            return RedirectToAction(nameof(Index));
+        }
 
         _context.Contatos.Update(contatoBanco);
         _context.SaveChanges();
